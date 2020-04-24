@@ -1,0 +1,64 @@
+:root {
+    background-color: #26a69a;
+    font-family: 'Roboto', sans-serif;
+
+    --shadow: 20px 20px #64d8cb;
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    margin: 80px 0 0 0 ;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px;
+    grid-template-areas: 
+    "header header header header"
+    "header header header header" 
+    "main main main main" 
+    "main main main main" 
+    "main main main main" 
+    "main main main main" ;
+}
+
+#display {
+    grid-area: header;
+    font-size: 60px;
+    text-align: right;
+    background-color: white;
+    height: 200px;
+    box-shadow: var(--shadow);
+}
+
+
+.btn {
+    border: none;
+    color: white;
+    background-color: #455a64;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    box-shadow: var(--shadow);
+}
+
+#multiply {
+    background-color: #718792;
+}
+
+#divide {
+    background-color: #718792;
+}
+
+#add {
+    background-color: #718792;
+}
+
+#subtract {
+    background-color: #718792;
+}
+
+#equals {
+    background-color: #718792;
+}
